@@ -7,7 +7,7 @@
   color: var(--first-text-color);
   margin-bottom: 30px;
 
-    @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     font-size: 36px;
     line-height: 1.17;
   }
@@ -15,12 +15,18 @@
 
 .title--hero {
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--third-text-color);
-  max-width: 696px;
+  max-width: 360px;
   margin: 0 auto;
   margin-bottom: 30px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: 1.36;
+    max-width: 696px;
+  }
 }
