@@ -1,5 +1,6 @@
 .container {
-  width: 1200px;
+  // width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -12,5 +13,15 @@
   &--footer {
     display: flex;
     align-items: baseline;
+  }
+
+  @media screen and (min-width: 480px) {
+    width: 448px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 720px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
   }
 }
