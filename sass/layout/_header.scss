@@ -8,14 +8,16 @@
 }
 
 .header-contacts {
-  display: flex;
+  display: none;
+  // display: flex;
 }
 
 .header-contacts__item {
-  margin-right: 30px;
-  &:last-child {
-    margin-right: 0;
-  }
+  display: none;
+  // margin-right: 30px;
+  // &:last-child {
+  //   margin-right: 0;
+  // }
 }
 
 .header-contacts__link {

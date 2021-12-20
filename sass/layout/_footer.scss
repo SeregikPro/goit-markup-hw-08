@@ -1,5 +1,4 @@
 .footer {
-  display: flex;
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--second-background-color);
@@ -8,7 +7,15 @@
 .footer-left {
   display: flex;
   flex-direction: column;
-  margin-right: 70px;
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 165px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+    margin-bottom: 0;
+  }
 }
 
 .contacts-list__item:not(:last-child) {
@@ -44,5 +51,9 @@
 }
 
 .footer-center {
-  margin-right: auto;
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    margin-right: auto;
+  }
 }

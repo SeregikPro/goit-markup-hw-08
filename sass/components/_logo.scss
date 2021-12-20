@@ -1,8 +1,8 @@
 .logo {
   font-family: Raleway;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: #2196f3;
   &--dark {
@@ -11,13 +11,20 @@
   &--light {
     color: #ffffff;
   }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .logo--header {
   display: block;
-  margin-right: 93px;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  // margin-right: 93px;
+  // padding-top: 24px;
+  // padding-bottom: 24px;
 }
 
 .logo--footer {
