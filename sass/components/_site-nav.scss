@@ -1,5 +1,9 @@
 .site-nav {
-  display: flex;
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 }
 
 .site-nav__item {
@@ -15,7 +19,7 @@
 .current-page {
   &::after {
     position: absolute;
-    bottom: 0;
+    bottom: -1px;
     left: 0;
     content: '';
     width: 100%;

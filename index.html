@@ -22,7 +22,7 @@
   </head>
 
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container container--header">
         <nav class="header-navigation">
           <a class="logo logo--header link" href="./index.html" lang="en">
@@ -58,8 +58,59 @@
             </a>
           </li>
         </ul>
+        <button type="button" class="menu-btn" data-menu-open>
+          <svg class="menu-btn__icon" width="40" height="40">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+      <div class="mob-menu is-hidden">
+        <button type="button" class="close-menu-btn" data-menu-close>
+          <svg class="close-btn__icon" width="40" height="40">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <ul class="menu-nav">
+          <li class="menu-nav__item">
+            <a href="./index.html" class="menu-nav__link link current-page">Студия</a>
+          </li>
+          <li class="menu-nav__item">
+            <a href="./portfolio.html" class="menu-nav__link link">Портфолио</a>
+          </li>
+          <li class="menu-nav__item">
+            <a href="" class="menu-nav__link link">Контакты</a>
+          </li>
+        </ul>
+        <div class="mob-menu__bottom">
+          <ul class="menu-contacts">
+            <li class="menu-contacts__item">
+              <a class="menu-contacts__link menu-contacts__tel link" href="tel:+380961111111">
+                +38 096 111 11 11
+              </a>
+            </li>
+            <li class="menu-contacts__item">
+              <a class="menu-contacts__link link" href="mailto:info@devstudio.com">
+                info@devstudio.com
+              </a>
+            </li>
+          </ul>
+          <ul class="menu-socials">
+            <li class="menu-socials__item">
+              <a class="menu-socials__link link" href="">Instagram</a>
+            </li>
+            <li class="menu-socials__item">
+              <a class="menu-socials__link link" href="">Twitter</a>
+            </li>
+            <li class="menu-socials__item">
+              <a class="menu-socials__link link" href="">Facebook</a>
+            </li>
+            <li class="menu-socials__item">
+              <a class="menu-socials__link link" href="">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
     <main>
       <!-- HERO -->
       <section class="hero">
@@ -121,7 +172,7 @@
         </div>
       </section>
       <!-- ABOUT -->
-      <!-- <section class="about section">
+      <section class="about section">
         <div class="container">
           <h2 class="title">Чем мы занимаемся</h2>
           <ul class="about__list">
@@ -157,9 +208,9 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- TEAM -->
-      <!-- <section class="team section">
+      <section class="team section">
         <div class="container">
           <h2 class="title">Наша команда</h2>
           <ul class="team__list">
@@ -369,9 +420,9 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- CLIENTS -->
-      <!-- <section class="clients section">
+      <section class="clients section">
         <div class="container">
           <h2 class="title">Постоянные клиенты</h2>
           <ul class="clients__list">
@@ -419,9 +470,9 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container container--footer">
         <div class="footer-left">
           <a class="logo logo--footer link" href="./index.html" lang="en">
@@ -495,7 +546,7 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="close-btn" data-modal-close>
@@ -563,5 +614,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
