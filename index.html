@@ -14,9 +14,6 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
@@ -599,14 +596,17 @@
               id="modal-check"
               class="checkbox__check visually-hidden"
             />
-            <label for="modal-check" class="checkbox__text">
-              <span>
-                <svg class="checkbox__icon" width="16" height="15">
-                  <use href="./images/icons.svg#icon-check"></use>
-                </svg>
-              </span>
-              Соглашаюсь с рассылкой и принимаю&nbsp;
-              <a href="" class="checkbox__terms-link">Условия договора</a>
+            <label for="modal-check" class="checkbox__wrap">
+              <div class="checkbox__text">
+                <span>
+                  <svg class="checkbox__icon" width="16" height="15">
+                    <use href="./images/icons.svg#icon-check"></use>
+                  </svg> </span
+                >Соглашаюсь с рассылкой и принимаю
+                <a rel="nofollow noopener" href="" class="checkbox__terms-link" target="_blank"
+                  >Условия договора</a
+                >
+              </div>
             </label>
           </div>
           <button type="submit" class="btn btn--modal">Отправить</button>
