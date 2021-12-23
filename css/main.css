@@ -651,16 +651,7 @@ img {
           justify-content: center;
 }
 
-.checkbox__text {
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  word-break: break-word;
-  color: var(--second-text-color);
-  display: block;
-}
-
-.checkbox__text span {
+.checkbox__wrap span {
   width: 16px;
   height: 15px;
   border: 2px solid var(--first-text-color);
@@ -674,6 +665,15 @@ img {
           align-items: flex-end;
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.checkbox__text {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  word-break: break-word;
+  color: var(--second-text-color);
+  display: block;
 }
 
 @media screen and (min-width: 1200px) {

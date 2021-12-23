@@ -74,15 +74,6 @@
 .checkbox__wrap {
   display: flex;
   justify-content: center;
-}
-
-.checkbox__text {
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  word-break: break-word;
-  color: var(--second-text-color);
-  display: block;
 
   span {
     width: 16px;
@@ -94,6 +85,15 @@
     align-items: flex-end;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
+}
+
+.checkbox__text {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  word-break: break-word;
+  color: var(--second-text-color);
+  display: block;
 
   @media screen and (min-width: 1200px) {
     font-size: 14px;
