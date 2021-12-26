@@ -9,6 +9,11 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  transition: opacity 300ms, visibility 300ms;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 
 .mob-menu__bottom {
@@ -58,9 +63,13 @@
 }
 
 .menu-contacts__tel {
-  font-size: 34px;
+  font-size: 7vw;
   line-height: 1.18;
   color: var(--accent-color);
+
+  @media screen and (min-width: 480px) {
+    font-size: 34px;
+  }
 }
 
 .menu-socials {
